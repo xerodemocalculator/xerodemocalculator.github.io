@@ -51,13 +51,15 @@
   @font-face {
     font-family: 'National2Condensed';
     font-weight: 700;
-    src: url('../fonts/national2-condensed-bold.otf') format('opentype');
+    src: url('https://www.xero.com/fonts/national2-condensed-web-bold.woff2') format('woff2'),
+         url('https://www.xero.com/fonts/national2-condensed-web-bold.woff') format('woff');
     font-display: swap;
   }
   @font-face {
     font-family: 'National2Condensed';
     font-weight: 800;
-    src: url('../fonts/national2-condensed-extrabold.otf') format('opentype');
+    src: url('https://www.xero.com/fonts/national2-condensed-web-extrabold.woff2') format('woff2'),
+         url('https://www.xero.com/fonts/national2-condensed-web-extrabold.woff') format('woff');
     font-display: swap;
   }
 </style>
@@ -87,7 +89,7 @@
 
     body {
       font-family: var(--font);
-      background: #F5F7FA;
+      background: var(--xero-panel-bg);
       color: var(--xero-text);
       font-size: 0.9375rem;
       line-height: 1.5;
@@ -221,7 +223,7 @@
     .input-wrap {
       display: flex;
       align-items: center;
-      border: 1px solid var(--xero-input-border-grey);
+      border: 1px solid var(--xero-input-border);
       border-radius: var(--radius);
       background: var(--xero-input-bg);
       overflow: hidden;
